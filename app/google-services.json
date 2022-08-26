@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "640318830178",
+    "firebase_url": "https://bloom-eefe4.firebaseio.com",
+    "project_id": "bloom-eefe4",
+    "storage_bucket": "bloom-eefe4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:640318830178:android:04cfa3201b56996172433b",
+        "android_client_info": {
+          "package_name": "com.arech.bloom"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "640318830178-e2tb0cu0ksefg83em0jerjtoiguepn93.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.arech.bloom",
+            "certificate_hash": "c19c664a1f53a665c02acb53bcbba64f490280a1"
+          }
+        },
+        {
+          "client_id": "640318830178-c0jqna4aakam62geba9jmqm3a5uaq8hj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzzogkgpoA2mIKfVsmTdHK6mB4V5p02xw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "640318830178-c0jqna4aakam62geba9jmqm3a5uaq8hj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

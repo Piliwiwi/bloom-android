@@ -1,0 +1,54 @@
+[
+  {
+    "_id": "1234567890",
+    "title": "Tomates Bellos",
+    "subtitle": "Zona: 1",
+    "isActive": true,
+    "lastSync": "27/04/21 16:04",
+    "plants": "4300 plantas",
+    "sensors": [
+      {
+        "_id": "123123123",
+        "type": "Temperatura",
+        "formattedData": "26.5 ºC",
+        "formattedPermittedMax": "27.0 ºC",
+        "formattedPermittedMin": "20.1 ºC",
+        "formattedOptimum": "25.6 ºC",
+        "medium": "bajo",
+        "icon": "ic_temperature",
+        "stat": "warning_max"
+      },
+      {
+        "_id": "787878787878",
+        "type": "Humedad de suelo",
+        "formattedData": "80%",
+        "formattedPermittedMax": "100%",
+        "formattedPermittedMin": "50%",
+        "formattedOptimum": "77%",
+        "icon": "ic_soil_humidity",
+        "stat": "ok"
+      }
+    ]
+  },
+  {
+    "_id": "98765432",
+    "title": "Tomates Feos",
+    "subtitle": "Zona: 2",
+    "isActive": true,
+    "lastSync": "27/04/21 16:04",
+    "plants": "600 plantas",
+    "sensors": [
+      {
+        "_id": "123123123",
+        "type": "Temperatura",
+        "formattedData": "19.3 ºC",
+        "formattedPermittedMax": "27.0 ºC",
+        "formattedPermittedMin": "20.1 ºC",
+        "formattedOptimum": "25.6 ºC",
+        "medium": "alto",
+        "icon": "ic_temperature",
+        "stat": "critic_min"
+      }
+    ]
+  }
+]

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="5dp"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/cell_sector_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="8dp" />
+
+    <LinearLayout
+        android:id="@+id/cell_sector_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft = "5dp"
+        android:paddingRight = "5dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/cell_sector_bg"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@drawable/layout_rounded_top"
+            android:layout_gravity="center"
+            android:padding="2dp"
+            android:orientation="vertical">
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/sector_pieChart"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/layout_rounded_bottom"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="5dp"
+            >
+
+            <TextView
+                android:id="@+id/cell_sector_name"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Lechugas especiales"
+                android:textAlignment="center"
+                android:gravity="bottom"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" />
+
+            <TextView
+                android:id="@+id/cell_sector_number"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Invernadero 1"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                android:gravity="top"
+                android:textColor="@color/white"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/cell_sector_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+
+</LinearLayout>

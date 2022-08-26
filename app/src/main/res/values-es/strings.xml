@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="languages">
+        <item>Español</item>
+        <item>Inglés</item>
+    </string-array>
+
+    <string name="app_name">Bloom</string>
+    <string name="action_bed_view">Vista de camas</string>
+    <string name="action_node_view">Vista de nodos</string>
+    <string name="navigation_drawer_open">Abrir pestaña de navegación</string>
+    <string name="navigation_drawer_close">Cerrar pestaña de navegación</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">encabezado de navegación</string>
+    <string name="action_settings">Configuración</string>
+    <string name="action_logout">Cerrar Sesión</string>
+    <string name="wrong_password">Usuario y/o contraseña incorrecta</string>
+    <string name="net_error">Error de red: Compruebe su conexión a internet</string>
+    <string name="internal_error">Error interno del servidor, Por favor contactar con soporte de Bloom</string>
+    <string name="empty_fields">Debe completar todos los campos requeridos</string>
+    <string name="invalid_email">Correo electrónico inválido</string>
+    <string name="welcome">Bienvenido</string>
+    <string name="have_an_account">¿Tienes cuenta?</string>
+    <string name="log_in">Inicia Sesión</string>
+    <string name="want_to_subscribe">¿Deseas Suscribirte?</string>
+    <string name="buy_subscription">Comprar Suscripción</string>
+    <string name="email">Correo electrónico</string>
+    <string name="password">Contraseña</string>
+    <string name="start">Iniciar</string>
+    <string name="forgot_pass">Olvidé mi contraseña</string>
+    <string name="greenhouse">Invernadero</string>
+    <string name="no_greenhouse">Aún no tienes ningún invernadero</string>
+    <string name="sector">Sector</string>
+    <string name="no_sector">Aún no tienes ningún sector</string>
+    <string name="node">Nodo</string>
+</resources>

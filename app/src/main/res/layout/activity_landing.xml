@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:padding="18dp"
+    android:background="#0B294D"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:src="@drawable/ic_logo"
+            android:layout_gravity="center"
+            android:layout_width="160dp"
+            android:layout_height="167dp" />
+        <TextView
+            android:text="@string/welcome"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="31dp"
+            android:paddingTop="40dp"
+            android:paddingBottom="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="@string/have_an_account"
+            android:textSize="17dp"
+            android:textColor="#A1FFFFFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/landinLogin"
+            android:layout_width="285dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_rounded_login"
+            android:text="@string/log_in"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp" />
+        <TextView
+            android:text="¿Primera vez?"
+            android:textSize="17dp"
+            android:textColor="#A1FFFFFF"
+            android:paddingTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/landingSub"
+            android:text="Registrarse"
+            android:textColor="#FFFFFF"
+            android:textAllCaps="false"
+            android:textSize="18dp"
+            android:background="@drawable/btn_rounded_sub"
+            android:layout_gravity="center"
+            android:layout_width="285dp"
+            android:layout_height="35dp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

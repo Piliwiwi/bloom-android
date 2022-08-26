@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#000000</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="critic_max_bg">#993C48</color>
+    <color name="critic_min_bg">#0366fc</color>
+    <color name="warning_max_bg">#fc9003</color>
+    <color name="warning_min_bg">#9BB63E</color>
+    <color name="ok_bg">#329C4D</color>
+    <color name="sensor_critic_max">#E84545</color>
+    <color name="sensor_critic_min">#0366fc</color>
+    <color name="sensor_critic_max_2">#FF0000</color>
+    <color name="sensor_warning_max">#fc9003</color>
+    <color name="sensor_warning_min">#9BB63E</color>
+    <color name="sensor_ok">#57D24B</color>
+    <color name="greenhouse_default_bg">#05596D</color>
+    <color name="bloom_bg_dark">#0F2B4D</color>
+    <color name="bloom_bg">#05596D</color>
+    <color name="shadow">#183A42</color>
+    <color name="innactive">#CDCDCD</color>
+    <color name="bloom_bg_innactive">#878787</color>
+    <color name="bloom_bg_clear">#2098A8</color>
+
+</resources>

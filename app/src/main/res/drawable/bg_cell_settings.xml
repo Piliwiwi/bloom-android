@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle" >
+
+    <item>
+        <shape>
+            <!-- set the shadow color here -->
+            <stroke
+                android:width="5dp"
+                android:color="#7000" />
+
+            <!-- setting the thickness of shadow (positive value will give shadow on that side) -->
+
+            <padding
+                android:bottom="5dp"
+                android:left="0dp"
+                android:right="3dp"
+                android:top="0dp" />
+
+            <corners android:radius="3dp" />
+        </shape>
+    </item>
+
+    <!-- Background -->
+
+    <item>
+        <vector
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:aapt="http://schemas.android.com/aapt"
+            android:width="352dp"
+            android:height="130dp"
+            android:viewportWidth="352"
+            android:viewportHeight="130"
+            >
+
+            <group>
+
+                <clip-path
+                    android:pathData="M5 0H347C349.761 0 352 2.23858 352 5V125C352 127.761 349.761 130 347 130H5C2.23858 130 0 127.761 0 125V5C0 2.23858 2.23858 0 5 0Z"
+                    />
+
+                <path
+                    android:pathData="M0 0V130H352V0"
+                    android:fillColor="#B3006572"
+                    />
+
+            </group>
+
+        </vector>
+    </item>
+</layer-list>

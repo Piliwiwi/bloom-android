@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:id="@+id/cell_node_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+    <LinearLayout
+        android:id="@+id/cell_switch_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layout_rounded"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingTop="5dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="5dp"
+        >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+
+        <LinearLayout
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/cell_switch_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_fan"
+                android:adjustViewBounds="true"
+                android:maxWidth="30dp"
+                android:gravity="start"/>
+
+            <TextView
+                android:id="@+id/cell_switch_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ventilador 1"
+                android:textSize="15sp"
+                android:gravity="start"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:paddingLeft="10dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#FFFFFF"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Manual"
+                    android:textSize="10dp"
+                    android:gravity="center_vertical|right"
+                    android:textColor="@color/white"
+                    android:paddingRight="9dp" />
+
+                <Switch
+                    android:id="@+id/cell_switch_auto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:switchMinWidth="50dp"
+                    android:checked="true"
+                    android:gravity="center_vertical"
+                    android:theme="@style/Switch_isAuto"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+
+                    android:text="Auto"
+                    android:textSize="10dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/white"
+                    android:paddingLeft="9dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ToggleButton
+                    android:id="@+id/cell_switch_on"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:textColor="#FFFFFF"
+                    android:checked="false"
+                    android:textOn="ON"
+                    android:textOff="OFF"
+                    android:layout_gravity="center"
+                    android:clickable="false"
+                    android:background="@drawable/btn_toggle_onoff"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/cell_node_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="8dp" />
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    xmlns:android.support.v7.recyclerview="http://schemas.android.com/apk/res-auto"
+    android:background="#0F2B4D"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/no_sectors"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Este invernadero no está sectorizado"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textSize="20sp"
+            />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/sector_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android.support.v7.recyclerview:spanCount="2"
+        tools:itemCount="6"
+        tools:layoutManager="android.support.v7.widget.GridLayoutManager"
+        tools:listitem="@layout/cell_sector"
+        android:layout_gravity="center"
+        tools:orientation="vertical"
+        tools:spanCount="2">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

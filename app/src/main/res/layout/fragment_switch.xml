@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    xmlns:android.support.v7.recyclerview="http://schemas.android.com/apk/res-auto"
+    android:background="#0F2B4D"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/fragment_switch_bar"
+        android:padding="6dp"
+        android:orientation="horizontal"
+        android:background="#007E8F"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:id="@+id/admin_node_ds_display"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="140dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="Deep Sleep"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:layout_marginLeft="2dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="10"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/WhiteStyle"
+                android:id="@+id/inputLayoutDs">
+
+                <EditText
+                    android:id="@+id/admin_node_ds"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:maxLines="1"
+                    android:text="1234"
+                    android:textAlignment="center"
+                    android:inputType="number"
+                    android:textSize="16sp"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginRight="10dp">
+
+            <ToggleButton
+                android:id="@+id/admin_node_ds_btn"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:textColor="#FFFFFF"
+                android:checked="false"
+                android:textOn="Enviar"
+                android:textOff="Actual"
+                android:background="@drawable/btn_toggle_onoff"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/no_nodes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="..."
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textSize="20sp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:paddingTop="8dp"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_weight="4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/sensor_detail_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                tools:layoutManager="android.support.v7.widget.GridLayoutManager"
+                tools:listitem="@layout/cell_sensor"
+                android:layout_gravity="center">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="0"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/switch_detail_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                tools:layoutManager="android.support.v7.widget.GridLayoutManager"
+                tools:listitem="@layout/cell_switch"
+                android:layout_gravity="center">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

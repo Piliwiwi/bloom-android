@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    xmlns:android.support.v7.recyclerview="http://schemas.android.com/apk/res-auto"
+    android:background="#0F2B4D"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/no_greenhouses"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Este campo no tiene ningún invernadero"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textSize="20sp"
+            />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/greenhouse_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:transcriptMode="alwaysScroll"
+        android.support.v7.recyclerview:stackFromEnd="true"
+        tools:listitem="@layout/cell_greenhouse"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

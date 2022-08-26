@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_dialog"
+        android:orientation="vertical"
+        android:padding="36dp">
+
+        <TextView
+            android:id="@+id/edit_zone_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Editar Zona"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edit_plant_text_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:theme="@style/WhiteStyle">
+
+            <EditText
+                android:id="@+id/edit_plant_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:imeOptions="actionDone"
+                android:hint="¿Cuántas plantas hay aquí?"
+                android:inputType="number"
+                android:maxLines="1"
+                android:textColor="#FFFFFF" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/edit_plant_label_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Última actualización: 12 / 08 / 2020  22:34"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            android:textSize="11dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edit_crop_text_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:theme="@style/WhiteStyle">
+
+            <EditText
+                android:id="@+id/edit_crop_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:imeOptions="actionDone"
+                android:hint="¿Qué se cultiva aquí?"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColor="#FFFFFF" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/edit_crop_label_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Ultima actualización: 12 / 08 / 2020  22:34"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            android:textSize="11dp" />
+
+        <Button
+            android:id="@+id/edit_zone_update_button"
+            android:layout_width="135dp"
+            android:layout_height="38dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="36dp"
+            android:background="@drawable/btn_rounded_green_login"
+            android:enabled="true"
+            android:text="ACTUALIZAR"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    xmlns:android.support.v7.recyclerview="http://schemas.android.com/apk/res-auto"
+    android:background="#0F2B4D"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:padding="10dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_cell_settings"
+                android:orientation="horizontal"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_weight="5"
+                    >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_contect_calendar_white"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingTop="25dp"
+                        android:paddingRight="25dp"
+                        android:paddingBottom="25dp"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Información Personal"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:textSize="18dp"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="#007E8F"
+                            />
+
+                        <TextView
+                            android:id="@+id/settings_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Nombre Apellido"
+                            android:textColor="@color/white"
+                            android:textSize="16dp"
+                            android:paddingTop="10dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/settings_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Título"
+                            android:textColor="@color/white"
+                            android:textSize="16dp"
+                            android:textStyle="italic"
+                            />
+
+                        <TextView
+                            android:id="@+id/settings_company"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Compañia"
+                            android:textColor="@color/white"
+                            android:textSize="16dp"
+                            android:textStyle="italic"
+                            />
+                        <TextView
+                            android:id="@+id/settings_phone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Teléfono"
+                            android:textColor="@color/white"
+                            android:textSize="16dp"
+                            android:textStyle="italic"
+                            />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:paddingTop="5dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_cell_settings"
+                android:orientation="vertical"
+                >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="25dp"
+                        android:paddingTop="25dp"
+                        android:paddingRight="25dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="Cuenta"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:textSize="18dp"
+
+                            />
+
+                        <TextView
+                            android:id="@+id/settings_email"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="(sheshitofarmer@bloom.com)"
+                            android:textSize="14dp"
+                            android:textColor="#C4C4C4"
+                            android:textStyle="italic"
+                            android:gravity="end" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#007E8F"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginLeft="25dp"
+                    />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="25dp"
+                    android:paddingRight="25dp"
+                    android:paddingBottom="25dp"
+                    android:paddingTop="5dp"
+                    >
+
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="7"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:visibility="gone"
+            android:layout_weight="15"
+            android:gravity="center"
+            >
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_rounded_green_login"
+                android:text="Editar"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="13sp"
+                android:drawableLeft="@drawable/ic_edit_white"
+                android:drawablePadding="-20dp"
+                android:paddingLeft="20dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="8"
+            android:padding="20dp"
+            >
+            <Button
+                android:id="@+id/settings_logout"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_rounded_green_login"
+                android:text="@string/action_logout"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:drawableLeft="@drawable/ic_power_settings_white"
+                android:drawablePadding="-30dp"
+                android:paddingLeft="30dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,10 @@
+package com.arech.bloom.app.sector.model
+
+/**
+ * Created by Pili Arancibia on 9/27/19
+ */
+
+interface SectorRepository {
+    fun getSectorsAPI(greenhouseId: String)
+    fun getSectorsDB(greenhouseId: String)
+}
